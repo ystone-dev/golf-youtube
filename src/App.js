@@ -1,30 +1,24 @@
-import React from "react";
+import React, { Suspense, lazy } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Main from "./components/section/Main";
 
-import Channel from "./pages/Channel";
-import Lessoner from "./pages/Lessoner";
-import Back from "./pages/Back";
-import Home from "./pages/Home";
-import Not from "./pages/Not";
-import Down from "./pages/Down";
-import Search from "./pages/Search";
-import Today from "./pages/Today";
-import Video from "./pages/Video";
-import Address from "./pages/Address";
-import Driver from "./pages/Driver";
-import Wood from "./pages/Wood";
-import Iron from "./pages/Iron";
-import Approach from "./pages/Approach";
-import Putting from "./pages/Putting";
-import Header from "./components/Header";
-import Main from "./components/Main";
-import Footer from "./components/Footer";
+const Channel = lazy(() => import("./pages/Channel"));
+const Lessoner = lazy(() => import("./pages/Lessoner"));
+const Back = lazy(() => import("./pages/Back"));
+const Home = lazy(() => import("./pages/Home"));
+const Not = lazy(() => import("./pages/Not"));
+const Down = lazy(() => import("./pages/Down"));
+const Search = lazy(() => import("./pages/Search"));
+const Today = lazy(() => import("./pages/Today"));
+const Video = lazy(() => import("./pages/Video"));
+const Address = lazy(() => import("./pages/Address"));
+const Approach = lazy(() => import("./pages/Approach"));
+const Putting = lazy(() => import("./pages/Putting"));
 
 const App = () => {
   return (
     <BrowserRouter>
-      <Header />
-      <Main>
+      <Suspense fallback={<Main />}>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/today" element={<Today />} />
@@ -32,9 +26,6 @@ const App = () => {
           <Route path="/address" element={<Address />} />
           <Route path="/back" element={<Back />} />
           <Route path="/down" element={<Down />} />
-          <Route path="/driver" element={<Driver />} />
-          <Route path="/wood" element={<Wood />} />
-          <Route path="/iron" element={<Iron />} />
           <Route path="/approach" element={<Approach />} />
           <Route path="/putting" element={<Putting />} />
           <Route path="/channel/:channelId" element={<Channel />} />
@@ -42,8 +33,7 @@ const App = () => {
           <Route path="/search/:searchId" element={<Search />} />
           <Route path="*" element={<Not />} />
         </Routes>
-      </Main>
-      <Footer />
+      </Suspense>
     </BrowserRouter>
   );
 };

@@ -1,7 +1,8 @@
 import React from "react";
+import Main from "../components/section/Main";
 
 const Approach = () => {
-  return <div>Approach</div>;
+  return <Main>Approach</Main>;
 };
 
 export default Approach;

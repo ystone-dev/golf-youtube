@@ -1,7 +1,8 @@
 import React from "react";
+import Main from "../components/section/Main";
 
 const Address = () => {
-  return <div>Address</div>;
+  return <Main>Address</Main>;
 };
 
 export default Address;

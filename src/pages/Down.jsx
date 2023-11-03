@@ -1,7 +1,8 @@
 import React from "react";
+import Main from "../components/section/Main";
 
 const Down = () => {
-  return <div>Down</div>;
+  return <Main>Down</Main>;
 };
 
 export default Down;
