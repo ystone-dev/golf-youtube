@@ -2,7 +2,6 @@ import React, { Suspense, lazy } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Main from "./components/section/Main";
 
-const Channel = lazy(() => import("./pages/Channel"));
 const Lessoner = lazy(() => import("./pages/Lessoner"));
 const Back = lazy(() => import("./pages/Back"));
 const Home = lazy(() => import("./pages/Home"));
@@ -28,7 +27,6 @@ const App = () => {
           <Route path="/down" element={<Down />} />
           <Route path="/approach" element={<Approach />} />
           <Route path="/putting" element={<Putting />} />
-          <Route path="/channel/:channelId" element={<Channel />} />
           <Route path="/video/:videoId" element={<Video />} />
           <Route path="/search/:searchId" element={<Search />} />
           <Route path="*" element={<Not />} />
