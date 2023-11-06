@@ -4,7 +4,7 @@ import Menu from "../header/Menu";
 
 const Header = () => {
   return (
-    <header id="header" role="banner">
+    <header className="header" role="banner">
       <Logo />
       <Menu />
     </header>

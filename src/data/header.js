@@ -1,6 +1,6 @@
 export const headerMenus = [
   { title: "홈페이지", src: "/" },
-  { title: "추천 영상", src: "/today" },
+  { title: "추천 영상", src: "/recommended" },
   { title: "추천 레스너", src: "/lessoner" },
   { title: "어드레스", src: "/address" },
   { title: "백스윙", src: "/back" },
