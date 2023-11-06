@@ -8,7 +8,7 @@ const Home = lazy(() => import("./pages/Home"));
 const Not = lazy(() => import("./pages/Not"));
 const Down = lazy(() => import("./pages/Down"));
 const Search = lazy(() => import("./pages/Search"));
-const Today = lazy(() => import("./pages/Today"));
+const Recommended = lazy(() => import("./pages/Recommended"));
 const Video = lazy(() => import("./pages/Video"));
 const Address = lazy(() => import("./pages/Address"));
 const Approach = lazy(() => import("./pages/Approach"));
@@ -20,7 +20,7 @@ const App = () => {
       <Suspense fallback={<Main />}>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/today" element={<Today />} />
+          <Route path="/recommended" element={<Recommended />} />
           <Route path="/lessoner" element={<Lessoner />} />
           <Route path="/address" element={<Address />} />
           <Route path="/back" element={<Back />} />
