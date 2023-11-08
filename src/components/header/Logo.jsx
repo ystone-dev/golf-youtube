@@ -1,15 +1,16 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Logo = () => {
   return (
     <h1 className="header__logo">
-      <a href="/">
+      <Link to="/">
         <span>
           golf
           <br />
           youtube
         </span>
-      </a>
+      </Link>
     </h1>
   );
 };
