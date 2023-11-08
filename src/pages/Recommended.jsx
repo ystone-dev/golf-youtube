@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 const Recommended = () => {
   return (
-    <Main>
+    <Main title="추천 영상" description="추천 영상 페이지입니다.">
       <section className="recommended">
         <h2>👍🏻 추천 영상</h2>
         <ul>
