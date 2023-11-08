@@ -8,6 +8,6 @@ export const recommendedText = [
     author: "SBS Golf 레슨",
     channelId: "UCnY8QXU95EhOiPj30e9Maqg",
     date: " 2023. 9. 20.",
-    page: "/youtube",
+    video: "3rIoZe8L730",
   },
 ];
