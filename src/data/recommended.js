@@ -1,4 +1,4 @@
-import recommended01 from "../assets/img/recommended01.webp";
+import recommended01 from "../assets/img/recommended01.jpeg";
 
 export const recommendedText = [
   {
