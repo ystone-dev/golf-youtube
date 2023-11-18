@@ -63,10 +63,10 @@ export const downText = [
   {
     title: "잘못된 로테이션과 올바른 로테이션의 이해 | 이현 프로",
     img: down07,
-    author: "SBS Golf",
+    author: "JTBC GOLF",
     videoId: "Ord4xNAFiNA",
     date: "2023. 7. 19.",
-    channelId: "UC12XQWcIlaavjjbhh6EeMJw",
+    channelId: "UChJ1aZwVkgWAUZqYGYDOWgg",
   },
   {
     title: "[아카데미 이시우] 아이언샷 중심 잡기 좋은 체중 이동 연습법",
