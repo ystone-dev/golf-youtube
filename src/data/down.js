@@ -4,6 +4,8 @@ import down03 from "../assets/img/down03.jpeg";
 import down04 from "../assets/img/down04.jpeg";
 import down05 from "../assets/img/down05.jpeg";
 import down06 from "../assets/img/down06.jpeg";
+import down07 from "../assets/img/down07.jpeg";
+import down08 from "../assets/img/down08.jpeg";
 
 export const downText = [
   {
@@ -57,5 +59,21 @@ export const downText = [
     videoId: "UtgDehfeVlc",
     date: "2023. 8. 16.",
     channelId: "UCnY8QXU95EhOiPj30e9Maqg",
+  },
+  {
+    title: "잘못된 로테이션과 올바른 로테이션의 이해 | 이현 프로",
+    img: down07,
+    author: "SBS Golf",
+    videoId: "Ord4xNAFiNA",
+    date: "2023. 7. 19.",
+    channelId: "UC12XQWcIlaavjjbhh6EeMJw",
+  },
+  {
+    title: "[아카데미 이시우] 아이언샷 중심 잡기 좋은 체중 이동 연습법",
+    img: down08,
+    author: "SBS Golf",
+    videoId: "90jPdeAoTl8",
+    date: "2021. 3. 17.",
+    channelId: "UC12XQWcIlaavjjbhh6EeMJw",
   },
 ];
