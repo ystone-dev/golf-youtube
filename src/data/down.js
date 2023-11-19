@@ -6,6 +6,7 @@ import down05 from "../assets/img/down05.jpeg";
 import down06 from "../assets/img/down06.jpeg";
 import down07 from "../assets/img/down07.jpeg";
 import down08 from "../assets/img/down08.jpeg";
+import down09 from "../assets/img/down09.jpeg";
 
 export const downText = [
   {
@@ -74,6 +75,14 @@ export const downText = [
     author: "SBS Golf",
     videoId: "90jPdeAoTl8",
     date: "2021. 3. 17.",
+    channelId: "UC12XQWcIlaavjjbhh6EeMJw",
+  },
+  {
+    title: "[아카데미 이시우] 헤드를 던질 때 오른팔과 몸의 공간을 만들기",
+    img: down09,
+    author: "SBS Golf",
+    videoId: "lCmVeIk1E9k",
+    date: "2021. 12. 3.",
     channelId: "UC12XQWcIlaavjjbhh6EeMJw",
   },
 ];
