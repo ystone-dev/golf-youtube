@@ -4,6 +4,7 @@ import back03 from "../assets/img/back03.jpeg";
 import back04 from "../assets/img/back04.jpeg";
 import back05 from "../assets/img/back05.jpeg";
 import back06 from "../assets/img/back06.jpeg";
+import back07 from "../assets/img/back07.jpeg";
 
 export const backText = [
   {
@@ -55,5 +56,14 @@ export const backText = [
     videoId: "9igL0sE3iuI",
     date: "2023. 10. 26.",
     channelId: "UCOFWGUzmNH65HUPxWeTJmYw",
+  },
+  {
+    title:
+      "[아카데미 이시우] 오른 손바닥을 하늘을 보게 한 뒤 팔꿈치 수직으로 만들기",
+    img: back07,
+    author: "SBS Golf",
+    videoId: "4BnjbnqHGwo",
+    date: "2021. 12. 17.",
+    channelId: "UC12XQWcIlaavjjbhh6EeMJw",
   },
 ];
