@@ -2,6 +2,8 @@
   .container {
     display: flex;
     flex-wrap: wrap;
+    position: relative;
+    justify-content: space-between;
 
     &.overflow {
       width: 100%;
@@ -9,9 +11,28 @@
       overflow: hidden;
     }
 
-    li {
-      margin-right: 20px;
+    button {
+      position: absolute;
+      width: 27px;
+      height: 44px;
+      background-color: #00000080;
+      top: 55px;
 
+      img {
+        width: 15px;
+        height: 30px;
+      }
+    }
+
+    .left {
+      z-index: 1;
+    }
+
+    .right {
+      right: 0;
+    }
+
+    li {
       .img {
         width: 150px;
         height: 150px;
