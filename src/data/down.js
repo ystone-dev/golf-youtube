@@ -7,6 +7,7 @@ import down06 from "../assets/img/down06.jpeg";
 import down07 from "../assets/img/down07.jpeg";
 import down08 from "../assets/img/down08.jpeg";
 import down09 from "../assets/img/down09.jpeg";
+import down10 from "../assets/img/down10.jpeg";
 
 export const downText = [
   {
@@ -84,5 +85,14 @@ export const downText = [
     videoId: "lCmVeIk1E9k",
     date: "2021. 12. 3.",
     channelId: "UC12XQWcIlaavjjbhh6EeMJw",
+  },
+  {
+    title:
+      "[골프레슨]비거리 프로젝트 STEP.2 oo발가락의 비밀! 이사실을 아는순간…",
+    img: down10,
+    author: "백현범프로",
+    videoId: "G-pq9olHmUs",
+    date: "2022. 9. 26.",
+    channelId: "UCr_vGOCPjmYx3pd1iCFL7Bg",
   },
 ];
