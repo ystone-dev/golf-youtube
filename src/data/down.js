@@ -8,6 +8,7 @@ import down07 from "../assets/img/down07.jpeg";
 import down08 from "../assets/img/down08.jpeg";
 import down09 from "../assets/img/down09.jpeg";
 import down10 from "../assets/img/down10.jpeg";
+import down11 from "../assets/img/down11.jpeg";
 
 export const downText = [
   {
@@ -94,5 +95,14 @@ export const downText = [
     videoId: "G-pq9olHmUs",
     date: "2022. 9. 26.",
     channelId: "UCr_vGOCPjmYx3pd1iCFL7Bg",
+  },
+  {
+    title:
+      "(임연석7)드라이버샷이 안되는 이유는 바로 이것! 무조건 알아야 하는 원리",
+    img: down11,
+    author: "골쿡",
+    videoId: "dkAx1NiO0Wk",
+    date: "2021. 11. 16.",
+    channelId: "UCr9FPYFOmFm3RJKfi1UiTgQ",
   },
 ];
