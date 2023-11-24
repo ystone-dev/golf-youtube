@@ -15,7 +15,9 @@ const Lessoner = () => {
     const handleScroll = () => {
       if (inner) {
         inner.scrollLeft === 0 ? setLeftEnd(false) : setLeftEnd(true);
-        inner.scrollLeft === 472 ? setRightEnd(false) : setRightEnd(true);
+        inner.scrollLeft === inner.scrollWidth - inner.clientWidth
+          ? setRightEnd(false)
+          : setRightEnd(true);
       }
     };
 
@@ -37,7 +39,6 @@ const Lessoner = () => {
         left: direction,
         behavior: "smooth",
       });
-      console.log(inner.scrollLeft);
     }
   };
   return (
