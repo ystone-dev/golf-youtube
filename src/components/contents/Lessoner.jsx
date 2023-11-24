@@ -31,11 +31,11 @@ const Lessoner = () => {
     };
   }, []);
 
-  const handleXMove = (direction) => {
+  const handleXMove = (XScroll) => {
     const inner = innerRef.current;
     if (inner) {
       inner.scrollBy({
-        left: direction,
+        left: XScroll,
         behavior: "smooth",
       });
     }
