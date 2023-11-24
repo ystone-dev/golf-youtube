@@ -1,8 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { lessonerText } from "../../data/lessoner";
 import { Link } from "react-router-dom";
-import left from "../../assets/img/left.svg";
-import right from "../../assets/img/right.svg";
+import CarouselButton from "../common/CarouselButton";
 
 const Lessoner = () => {
   const [leftEnd, setLeftEnd] = useState(false);
@@ -41,6 +40,7 @@ const Lessoner = () => {
       });
     }
   };
+
   return (
     <section className="lessoner">
       <h2>👍🏻 추천 레스너</h2>
@@ -61,15 +61,9 @@ const Lessoner = () => {
             </li>
           ))}
         </ul>
-        {leftEnd && (
-          <button className="left" onClick={() => handleXMove(-300)}>
-            <img src={left} alt="" />
-          </button>
-        )}
+        {leftEnd && <CarouselButton direction="left" onScroll={handleXMove} />}
         {rightEnd && (
-          <button className="right" onClick={() => handleXMove(300)}>
-            <img src={right} alt="" />
-          </button>
+          <CarouselButton direction="right" onScroll={handleXMove} />
         )}
       </div>
     </section>
