@@ -1,18 +1,56 @@
 .video {
   .container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 15px;
+    position: relative;
 
-    @media (max-width: 1200px) {
-      grid-template-columns: repeat(3, 1fr);
+    .inner {
+      display: flex;
+      gap: 15px;
+
+      .thumbnail {
+        flex: 0 0 calc(25% - 15px + 15px / 4);
+
+        @media (max-width: 1200px) {
+          flex: 0 0 calc(33.33% - 15px + 15px / 3);
+        }
+      }
+
+      @media (max-width: 1000px) {
+        gap: 10px;
+
+        .thumbnail {
+          flex: 0 0 calc(50% - 15px + 15px / 2);
+          @media (max-width: 500px) {
+            flex: 0 0 100%;
+          }
+        }
+      }
     }
-    @media (max-width: 1000px) {
-      grid-template-columns: repeat(2, 1fr);
-      gap: 10px;
+
+    .left {
+      width: 27px;
+      height: 44px;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+      img {
+        width: 15px;
+        height: 30px;
+      }
     }
-    @media (max-width: 500px) {
-      grid-template-columns: repeat(1, 1fr);
+    .right {
+      width: 27px;
+      height: 44px;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+      img {
+        width: 15px;
+        height: 30px;
+      }
     }
   }
 }
