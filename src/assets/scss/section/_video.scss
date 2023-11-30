@@ -1,6 +1,7 @@
 .video {
   .container {
     position: relative;
+    overflow: hidden;
 
     .inner {
       display: flex;
